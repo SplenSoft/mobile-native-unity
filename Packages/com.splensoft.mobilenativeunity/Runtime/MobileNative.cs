@@ -33,7 +33,7 @@ namespace SplenSoft.Unity.MobileNative
 #elif UNITY_IPHONE
             _TAG_ShowDialogNeutral(title, message, accept, neutral, decline);
 #elif UNITY_ANDROID            
-            AndroidJavaClass javaUnityClass = new AndroidJavaClass("com.SplenSoft.Unity.MobileNative.nativepopup.Bridge");
+            AndroidJavaClass javaUnityClass = new AndroidJavaClass("com.pingak9.nativepopup.Bridge");
             javaUnityClass.CallStatic("ShowDialogNeutral", title, message, accept, neutral, decline);
 #endif
         }
@@ -52,7 +52,7 @@ namespace SplenSoft.Unity.MobileNative
 #elif UNITY_IPHONE
             _TAG_ShowDialogConfirm(title, message, yes, no);
 #elif UNITY_ANDROID            
-            AndroidJavaClass javaUnityClass = new AndroidJavaClass("com.SplenSoft.Unity.MobileNative.nativepopup.Bridge");
+            AndroidJavaClass javaUnityClass = new AndroidJavaClass("com.pingak9.nativepopup.Bridge");
             javaUnityClass.CallStatic("ShowDialogConfirm", title, message, yes, no, cancelable);
 #endif
         }
@@ -63,7 +63,7 @@ namespace SplenSoft.Unity.MobileNative
 #elif UNITY_IPHONE
             _TAG_ShowDialogInfo(title, message, ok);
 #elif UNITY_ANDROID            
-            AndroidJavaClass javaUnityClass = new AndroidJavaClass("com.SplenSoft.Unity.MobileNative.nativepopup.Bridge");
+            AndroidJavaClass javaUnityClass = new AndroidJavaClass("com.pingak9.nativepopup.Bridge");
             javaUnityClass.CallStatic("ShowDialogInfo", title, message, ok);
 #endif
         }
@@ -74,7 +74,7 @@ namespace SplenSoft.Unity.MobileNative
 #elif UNITY_IPHONE
             _TAG_DismissCurrentAlert();
 #elif UNITY_ANDROID
-            AndroidJavaClass javaUnityClass = new AndroidJavaClass("com.SplenSoft.Unity.MobileNative.nativepopup.Bridge");
+            AndroidJavaClass javaUnityClass = new AndroidJavaClass("com.pingak9.nativepopup.Bridge");
             javaUnityClass.CallStatic("DismissCurrentAlert");
 #endif
         }
@@ -87,7 +87,7 @@ namespace SplenSoft.Unity.MobileNative
             double unix = (TimeZoneInfo.ConvertTimeToUtc(dateTime) - new DateTime(1970, 1, 1, 0, 0, 0, 0, System.DateTimeKind.Utc)).TotalSeconds; 
             _TAG_ShowDatePicker(2, unix);
 #elif UNITY_ANDROID
-            AndroidJavaClass javaUnityClass = new AndroidJavaClass("com.SplenSoft.Unity.MobileNative.nativepopup.Bridge");
+            AndroidJavaClass javaUnityClass = new AndroidJavaClass("com.pingak9.nativepopup.Bridge");
             javaUnityClass.CallStatic("ShowDatePicker", year, month, day);
 #endif
         }
@@ -97,7 +97,7 @@ namespace SplenSoft.Unity.MobileNative
 #elif UNITY_IPHONE
             _TAG_ShowDatePicker(1, 0);
 #elif UNITY_ANDROID
-            AndroidJavaClass javaUnityClass = new AndroidJavaClass("com.SplenSoft.Unity.MobileNative.nativepopup.Bridge");
+            AndroidJavaClass javaUnityClass = new AndroidJavaClass("com.pingak9.nativepopup.Bridge");
             javaUnityClass.CallStatic("ShowTimePicker");
 #endif
         }
