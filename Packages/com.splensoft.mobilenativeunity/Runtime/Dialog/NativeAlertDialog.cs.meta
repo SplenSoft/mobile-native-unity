@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 41200651d478f4d50bba0ae26f38ad18
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 210249
+  packageName: Native Dialogs for Android & iOS with Editor dialog
+  packageVersion: 1.0.1
+  assetPath: Assets/Protorius42/NativeDialog/Scripts/NativeAlertDialog.cs
+  uploadId: 781087

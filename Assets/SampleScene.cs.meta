@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: bf381828b54814eedb6cb430a270e5a8
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 210249
+  packageName: Native Dialogs for Android & iOS with Editor dialog
+  packageVersion: 1.0.1
+  assetPath: Assets/Protorius42/NativeDialog/Demo/Scripts/SampleScene.cs
+  uploadId: 781087

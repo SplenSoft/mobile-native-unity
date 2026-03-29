@@ -1,9 +1,12 @@
 {
     "name": "com.splensoft.mobilenativeunity",
-    "version": "1.0.2",
+    "version": "1.1.0",
     "displayName": "Mobile Native",
     "description": "An external interface to display native Android and iOS popups on mobile devices",
     "unity": "6000.0",
+    "dependencies": {
+      "com.cysharp.unitask" : "2.5.10"
+    },
     "author": {
       "name": "SplenSoft",
       "email": "support@splensoft.com",

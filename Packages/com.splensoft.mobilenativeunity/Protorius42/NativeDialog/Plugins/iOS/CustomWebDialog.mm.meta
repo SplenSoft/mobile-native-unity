@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 94f88769cce254b2cbd1097085b920d8
+AssetOrigin:
+  serializedVersion: 1
+  productId: 210249
+  packageName: Native Dialogs for Android & iOS with Editor dialog
+  packageVersion: 1.0.1
+  assetPath: Assets/Protorius42/NativeDialog/Plugins/iOS/CustomWebDialog.mm
+  uploadId: 781087

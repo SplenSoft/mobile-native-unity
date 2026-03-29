@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 5b9035dcf531e40d38a8d4bc9b7b1719
+AssetOrigin:
+  serializedVersion: 1
+  productId: 330621
+  packageName: "Native Date & Time Picker for Android\u2122 and iOS\u2122"
+  packageVersion: 1.0.0
+  assetPath: Assets/Protorius42/NativeDateTimePicker/Editor/PostBuildProcess.cs
+  uploadId: 782210

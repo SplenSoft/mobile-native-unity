@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 6249aa90cbcaa4592ae0457e931bf641
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 330621
+  packageName: "Native Date & Time Picker for Android\u2122 and iOS\u2122"
+  packageVersion: 1.0.0
+  assetPath: Assets/Protorius42/NativeDateTimePicker/Demo/Scenes/DateTimeSampleScene.unity
+  uploadId: 782210
