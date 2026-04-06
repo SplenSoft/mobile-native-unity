@@ -6,7 +6,6 @@ using Protorius42.NativeDateTimePicker;
 using Cysharp.Threading.Tasks;
 using Protorius42.NativeDialog;
 
-
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -114,7 +113,7 @@ namespace SplenSoft.Unity.MobileNative
 
             using NativeDateTimePickerDialog dialog = new NativeDateTimePickerDialog();
 
-            var dateTime = new DateTime(year, month, day);
+            var dateTime = new DateTime(year, month, day, 12, 0, 0, DateTimeKind.Local);
             var milliseconds = new DateTimeOffset(dateTime).ToUnixTimeMilliseconds();
             
             var dateTimeParam = new DialoDateTimeParam(
@@ -127,7 +126,7 @@ namespace SplenSoft.Unity.MobileNative
             dialog.ShowNativeDateTimeDialogAsync(dateTimeParam)
                 .ContinueWith(t =>
                 {
-                    DateTime result = DateTimeOffset.FromUnixTimeMilliseconds(t.Result.Item1).DateTime;
+                    DateTime result = DateTimeOffset.FromUnixTimeSeconds(t.Result.Item1).LocalDateTime;
 
                     if (t.Result.Item2 == DateTimeErrorCode.UserCancelled)
                     {
