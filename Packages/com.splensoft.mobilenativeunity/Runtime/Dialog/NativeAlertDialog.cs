@@ -62,6 +62,8 @@ namespace Protorius42.NativeDialog
 #if UNITY_EDITOR
                 if (!string.IsNullOrEmpty(conf.ButtonNeutralText))
                 {
+                    Debug.Log("NativeAlertDialog.ShowNativeDialogAsync: Displaying dialog with neutral button");
+
                     int option = UnityEditor.EditorUtility.DisplayDialogComplex(conf.Title, conf.Message, conf.ButtonPositiveText, conf.ButtonNegativeText, conf.ButtonNeutralText);
                     if (option == 0)
                         return (ButtonType.Positive, ButtonErrorCode.NoError);
@@ -72,11 +74,14 @@ namespace Protorius42.NativeDialog
                 
                 if (!string.IsNullOrEmpty(conf.ButtonNegativeText))
                 {
+                    Debug.Log("NativeAlertDialog.ShowNativeDialogAsync: Displaying dialog with negative button");
+
                     return UnityEditor.EditorUtility.DisplayDialog(conf.Title, conf.Message, conf.ButtonPositiveText, conf.ButtonNegativeText)
                         ? (ButtonType.Positive, ButtonErrorCode.NoError)
                         : (ButtonType.Negative, ButtonErrorCode.NoError);
                 }
                 
+                Debug.Log("NativeAlertDialog.ShowNativeDialogAsync: Displaying dialog with positive button only");
                 if (UnityEditor.EditorUtility.DisplayDialog(conf.Title, conf.Message, conf.ButtonPositiveText))
                 {
                     return (ButtonType.Positive, ButtonErrorCode.NoError);
