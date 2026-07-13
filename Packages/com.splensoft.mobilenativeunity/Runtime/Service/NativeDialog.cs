@@ -34,6 +34,11 @@ namespace SplenSoft.Unity.MobileNative
                 buttonPositiveText: ok, 
                 cancelable: false);
 
+            if (message.Contains("href"))
+            {
+                oneButtonDialog.FromHtml = true;
+            }
+
             dialog.ShowNativeDialogAsync(oneButtonDialog)
                 .ContinueWith(t =>
                 {
@@ -77,6 +82,11 @@ namespace SplenSoft.Unity.MobileNative
                 buttonPositiveText: yes,
                 buttonNegativeText: no,
                 cancelable: false);
+
+            if (message.Contains("href"))
+            {
+                oneButtonDialog.FromHtml = true;
+            }
 
             dialog.ShowNativeDialogAsync(oneButtonDialog)
                 .ContinueWith(t =>
